@@ -6,7 +6,9 @@
     color: #FFF;
 }
 
-
+body {
+    position: relative;
+}
 .navbar {
     display: flex;
     justify-content: center;
@@ -51,37 +53,12 @@
     transform: rotate(360deg);
 }
 
-/* .content {
+.conteudo-forms {
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFF;
 }
-
-.form-input label, input {
-    padding: 15px 0px;
-}
-
-.form-input {
-    width: 50rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-input h1 {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.form-input button {
-    padding: 10px;
-    margin: 20px 0px;
-}
-
-.form-input input {
-    margin: 0px 0px 20px 0px;
-    background-color: #FFF;
-} */
 
 
 .block {
@@ -145,4 +122,82 @@
     width: 50%;
 }
 
+.box {
+    width: 60rem;
+    text-align: center;
+    
+}
 
+.box p {
+    font-size: large;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* card flutuante */
+
+.floating-card {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212226;
+    padding: 20px;
+    border: 1px solid #212226;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    width: 300px; 
+    height: 300px; 
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: none;  */
+}
+
+.floating-card .message {
+    margin-bottom: 10px;
+}
+
+.floating-card .close-btn {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: #50409A;
+    padding: 5px;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.floating-card .error, .floating-card .success {
+    /* Remova quaisquer estilos de fundo que estejam sendo aplicados */
+    background-color: transparent; /* Ou qualquer outra cor de fundo desejada */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    z-index: 999; /* Z-index maior que o z-index do conteúdo principal */
+    display: none; /* Inicia oculto */
+}
+
+.blur-background {
+    filter: blur(5px); /* Ajuste o valor de desfoque conforme necessário */
+    pointer-events: none; /* Evita que o conteúdo desfocado seja interativo */
+}

@@ -1,29 +1,27 @@
-/* $(document).ready(function() {
-    
-    $('#linkNew').click(function() {
-        $('.conteudo-forms').load('UserNew.html .content');
+$(document).ready(function() {
+    function MostrarApresentacao() {
+        $('#inicio-apresentacao').show();
+        $('#cadastrar_usuario').hide();
+        $('#logar_usuario').hide();
+    }
 
-    });
-
-    $('#linkOld').click(function() {
-        $('.conteudo-forms').load('UserOld.html .content');
-
-    });
+    MostrarApresentacao(); //oculta as div cadastro e login ao carregar. Intancia de funcao;
 
     $('#logo').click(function() {
-        $('.conteudo-forms').load('description.html .content');
-
+        $('#inicio-apresentacao').show();
+        $('#cadastrar_usuario').hide();
+        $('#logar_usuario').hide();
     });
-}); */
 
-$(document).ready(function() {
     $('#linkNew').click(function() {
         $('#cadastrar_usuario').show();
         $('#logar_usuario').hide();
+        $('#inicio-apresentacao').hide();
     });
 
     $('#linkOld').click(function() {
         $('#cadastrar_usuario').hide();
         $('#logar_usuario').show();
+        $('#inicio-apresentacao').hide();
     });
 });
