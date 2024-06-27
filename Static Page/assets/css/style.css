@@ -79,9 +79,6 @@ body {
 }
 
 
-
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -98,6 +95,10 @@ body {
     border: none;
     width: 100%;
     font-size: medium;
+}
+
+.container button:hover {
+    background-color: #7a409e;
 }
 
 .form-input input {
@@ -179,8 +180,7 @@ body {
 }
 
 .floating-card .error, .floating-card .success {
-    /* Remova quaisquer estilos de fundo que estejam sendo aplicados */
-    background-color: transparent; /* Ou qualquer outra cor de fundo desejada */
+    background-color: transparent; 
     color: #ffffff;
     font-weight: bold;
 }
@@ -191,10 +191,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
-    backdrop-filter: blur(5px); /* Efeito de desfoque */
-    z-index: 999; /* Z-index maior que o z-index do conteúdo principal */
-    display: none; /* Inicia oculto */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    z-index: 999; 
+    display: none; 
 }
 
 .blur-background {
