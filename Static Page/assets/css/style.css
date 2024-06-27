@@ -53,8 +53,17 @@ body {
     transform: rotate(360deg);
 }
 
+footer a {
+    transition: transform 0.8s ease;
+}
+
+footer a:hover {
+    transition: transform 0.8s ease;
+    transform: rotate(360deg);
+}
+
 .conteudo-forms {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,4 +209,22 @@ body {
 .blur-background {
     filter: blur(5px); /* Ajuste o valor de desfoque conforme necessário */
     pointer-events: none; /* Evita que o conteúdo desfocado seja interativo */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin: 0px 10px 0px 10px;
 }
