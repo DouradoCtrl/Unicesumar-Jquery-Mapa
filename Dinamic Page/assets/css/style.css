@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #212226;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nav {
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: medium;
+}
+
+.b1 {
+    background-color: #50409A;
+    color: #FFF;
+}
+
+.b1:hover {
+    background-color: #463885;
+    cursor: pointer;
+}
+
+.b2 {
+    background-color: #964EC2;
+    color: #FFF;
+}
+
+.b2:hover {
+    background-color: #7a409e;
+    cursor: pointer;
+}
+
+#logo {
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+/* .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.form-input label, input {
+    padding: 15px 0px;
+}
+
+.form-input {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-input button {
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.form-input input {
+    margin: 0px 0px 20px 0px;
+    background-color: #FFF;
+} */
+
+
+.block {
+    display: block;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container button  {
+    cursor: pointer;
+    background-color: #964EC2;
+    color: #FFF;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    font-size: medium;
+}
+
+.form-input input {
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #ffffff;
+    color: #212226;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.form-input label {
+    margin-top: 5px;
+    font-size: medium;
+}
+
+.content h1,h2 {
+    margin: 2.5rem 0rem;
+}
+
+.aff {
+    width: 50%;
+}
+
+
