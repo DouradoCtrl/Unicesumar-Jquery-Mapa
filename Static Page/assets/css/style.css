@@ -207,8 +207,8 @@ footer a:hover {
 }
 
 .blur-background {
-    filter: blur(5px); /* Ajuste o valor de desfoque conforme necessário */
-    pointer-events: none; /* Evita que o conteúdo desfocado seja interativo */
+    filter: blur(5px); 
+    pointer-events: none; 
 }
 
 footer {
